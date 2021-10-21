@@ -11,4 +11,7 @@ Student saveStudent(Student student);
 
 Student getStudentById(Long id);
 Student updateSudent(Student student);
+
+
+void deleteStudentById(Long id);
 }
