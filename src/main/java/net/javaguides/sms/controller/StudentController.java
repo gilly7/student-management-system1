@@ -47,7 +47,7 @@ public class StudentController {
 		
 	}
 	
-	@PostMapping("/student/{id}")
+	@PostMapping("/students/{id}")
 	public String updateStudent(@PathVariable Long id,
 			@ModelAttribute("student") Student student,
 		     Model model){
