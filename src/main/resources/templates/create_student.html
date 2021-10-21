@@ -11,46 +11,44 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div
-				class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+			<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
 				<h1 class="text-center">Create New Student</h1>
-				<div class="card-body"></div>
+				<div class="card-body">
 				<form th:action="@{/students}" th:object="${student}" method="post">
-					<div class+"form-group>
-						<label> Student First Name</label> <input
-							type ="text"
-name="firstName" th: field="*{firstName}"
-							class="form-control" placeholder+"Enter Student First Name"
-/>
+					<div class = "form-group">
+						<label> Student First Name</label>
+						 <input type="text"
+							name="firstName" 
+							th:field="firstName" 
+							class="form-control"
+							placeholder="Enter Student First Name"
+							/>
 					</div>
-					<div class+"form-group>
-						<label> Student Last Name</label> <input
-							type ="text"
-name="<div class+" form-group> <label>
-							Student Last Name</label> <input type ="text"
-name="lastName" th:
-							field="*{lastName}" class="form-control" placeholder+"Enter Student
-							last Name"
-/>
+					<div class = "form-group">
+						<label> Student Last Name</label> 
+						<input type="text"
+							type="text" 
+							name="lastName" 
+							th:field="lastName" 
+							class="form-control" 
+							placeholder="Enter Student last Name"
+							/>
 					</div>
-					<div class+"form-group>
-						<label> Student Email</label> <input
-							type = "text"
-name="<div class+" form-group> <label>
-							text</label> <input type ="text"
-name="lastName" th:
-							field="*{email}" class="form_control" placeholder+"Enter Student
-							Email"
-/>
+					<div class ="form-group">
+						<label> Student Email</label>
+						 <input type="text"
+							name="email" 
+							th:field="email"
+							class="form_control"
+							 placeholder="Enter Student Email"
+							/>
 					</div>
-					<div> class="box-footer" >
-					
-					
-					<button type = "submit" class ="btn btn-primary">
-					Submit
-					
-					</button>
-					
+					<div class="box-footer">
+						<button type="submit" 
+						class="btn btn-primary">
+						Submit
+						</button>
+
 					</div>
 			</div>
 			</form>

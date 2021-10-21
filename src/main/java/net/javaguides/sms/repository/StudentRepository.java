@@ -9,7 +9,7 @@ import net.javaguides.sms.entity.Student;
 
 public interface StudentRepository extends JpaRepository<Student, Long>{
 
-	List<Student> saveAll(Object student);
+	//List<Student> saveStus(Object student);
 	
 	
 
